@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 const { connect } = require('./cypress/support/mongo')
 
-module.exports = defineConfig({
+module.exports = defineConfig({  
   e2e: {
     async setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -11,7 +11,7 @@ module.exports = defineConfig({
       on('task', {
         async deleteUser(email) {
           const users = db.collection('users')
-          await users.deleteMany({ email: email })
+          await users.deleteMany({email: email})
           return null
         }
 

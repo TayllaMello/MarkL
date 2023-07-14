@@ -9,6 +9,7 @@
   "author": "Taylla",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "^12.17.1",
+    "mongodb": "^5.7.0"
   }
 }
